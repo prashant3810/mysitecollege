@@ -1,0 +1,19 @@
+{% if stu_dep %}
+<table>
+<thead>
+<tr>
+    <th>Name</th>
+    <th>Department</th>
+</thead>
+    <tbody>
+{% for each in stu_dep %}
+<tr>
+    <td>{{ each.student.student_name }}</td>
+    <td>{{ each.student_dep  }}</td>
+{% endfor %}
+{% else %}
+<h1>no data available</h1>
+{% endif %}
+</tr>
+</tbody>
+    </table>

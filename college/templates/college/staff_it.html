@@ -1,0 +1,25 @@
+{% if stf_list %}
+<table>
+<thead>
+<tr>
+    <th>Name</th>
+    <th>Department</th>
+    <th> email </th>
+    <th> Qualification </th>
+    <th> Experience </th>
+</thead>
+    <tbody>
+{% for each in stf_list %}
+<tr>
+    <td>{{ each.staff_name }}</td>
+    <td>{{ each.staff_dep }}</td>
+    <td>{{ each.staff_mail }}</td>
+    <td>{{ each.staff_qualifications }}</td>
+    <td>{{ each.staff_experience  }}</td>
+{% endfor %}
+{% else %}
+<h1>no data available</h1>
+{% endif %}
+</tr>
+</tbody>
+    </table>

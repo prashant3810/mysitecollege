@@ -1,0 +1,28 @@
+{% if std_list %}
+<table>
+<thead>
+<tr>
+
+    <th>Name</th>
+    <th>Department</th>
+    <th> email </th>
+    <th>phone</th>
+
+</thead>
+    <tbody>
+{% for each in std_list %}
+<tr>
+
+    <td>{{ each.student.student_name }}</td>
+    <td>{{ each.student_dep }}</td>
+    <td>{{ each.student.student_mail }}</td>
+    <td>{{ each.student.phone_num }}</td>
+
+
+{% endfor %}
+{% else %}
+<h1>no data available</h1>
+{% endif %}
+</tr>
+</tbody>
+    </table>

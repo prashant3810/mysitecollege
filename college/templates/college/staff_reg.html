@@ -1,0 +1,14 @@
+<h2> STAFF REGISTRATION </h2>
+<form action="/college/save_staff_reg/" method="post">
+    {% csrf_token %}
+    NAME : <input type="text" name="staff_name"><br>
+    DEPATMENT : <input type="text" name="staff_dep"><br>
+    MAIL : <input type="text" name="staff_mail"><br>
+    USERNAME : <input type="text" name="username"><br>
+    PASSWORD : <input type="text" name="password"><br>
+    CONTACT : <input type="text" name="staff_phone_num"><br>
+    DEGREES : <input type="text" name="staff_qualifications"><br>
+    EXPERIENCE : <input type="number" name="staff_experience"><br>
+    <input type="submit" name="register"><br>
+</form>
+<a href="/college/staff_login/">Login</a>

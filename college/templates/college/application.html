@@ -1,0 +1,13 @@
+<h3> STUDENT APPLICATION FORM </h3>
+
+    <form action="/college/save_application/" method="post">
+        {% csrf_token %}
+            Name : <input type="text" name ="student_name"><br>
+            Mail : <input type="text" name ="student_mail"><br>
+            CONTACT_info : <input type="number" name ="phone_num"><br>
+            10th_class_marks : <input type="number" name ="ssc_marks"><br>
+            inter_marks: <input type="number" name="pu_marks"><br>
+
+            <input type="submit" name="Apply">
+
+    </form>
